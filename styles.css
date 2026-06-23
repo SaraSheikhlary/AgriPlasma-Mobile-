@@ -34,7 +34,7 @@ header {
 }
 
 .nav-logo {
-    height: 40px;
+    height: 60px; /* INCREASED: Makes the logo a little bit larger */
     width: auto;
 }
 
@@ -42,7 +42,7 @@ header {
 nav {
     flex-grow: 1; /* Pushes nav to fill space */
     text-align: center; /* This centers the links */
-    padding-right: 40px; /* Balances the logo on the left */
+    padding-right: 60px; /* Balances the larger logo on the left */
 }
 
 nav a {
@@ -74,4 +74,25 @@ p {
     line-height: 1.8;
     color: #cccccc;
     margin-bottom: 30px;
+}
+
+/* ADDED: Centers the bullet points on your Products tab */
+ul {
+    list-style-position: inside; 
+    padding-left: 0;
+    text-align: center;
+}
+
+li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+/* ADDED: Centers the footer at the bottom of the page */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+    color: #888888;
 }
