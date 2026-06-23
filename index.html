@@ -14,160 +14,47 @@
     <!-- Replace "random-letters-and-numbers" with your actual Google code -->
     <meta name="google-site-verification" content="random-letters-and-numbers" />
 
+    <!-- Link to your separate CSS file -->
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
 
-/* Navigation - Centered with Top-Left Logo */
-header {
-    background: #050505;
-    padding: 2rem 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Centers the navigation menu */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid #1a1a1a;
-}
+    <!-- Navigation Bar -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="AgriPlasma Mobile™ Logo">
+            <span>AgriPlasma Mobile™</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-header .logo {
-    position: absolute; /* Anchors the logo to the left */
-    left: 5%;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Chemical-Free Soil Disinfection & Fertilization</h1>
+        <p>Bringing advanced cold plasma technology right to the farmer's hand.</p>
+    </section>
 
-header .logo img {
-    height: 35px;
-    width: auto;
-}
+    <!-- About Us Section -->
+    <section class="content-section">
+        <h2>About Us</h2>
+        <div class="card">
+            <h3>Our Mission</h3>
+            <p>To empower modern farmers with fast, eco-safe solutions for soil revival, eliminating the reliance on harmful chemicals while maximizing crop yield and soil health.</p>
+            <h3>Our Vision</h3>
+            <p>Pioneering sustainable agriculture by integrating cutting-edge atmospheric plasma technology into portable, everyday tools for fields, greenhouses, and urban gardens alike.</p>
+        </div>
+    </section>
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 3rem; /* Wide spacing like the screenshot */
-}
+    <footer>
+        <p>&copy; 2026 AgriPlasma Mobile™. All rights reserved.</p>
+    </footer>
 
-nav a {
-    color: #888888;
-    text-decoration: none;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #ffffff;
-}
-
-/* Hero Section */
-#hero {
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
-}
-
-#hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: #ffffff;
-    letter-spacing: -0.5px;
-}
-
-/* Content Sections */
-.content-section {
-    padding: 4rem 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.bg-light {
-    background-color: #0a0a0a; /* Slightly lighter dark shade for contrast */
-}
-
-h2 {
-    text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 2rem;
-    color: #ffffff;
-    letter-spacing: 1px;
-}
-
-h3 {
-    color: #ffffff;
-    margin-bottom: 1.5rem;
-    margin-top: 3rem;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-.card {
-    background: transparent; /* Removes the white box to match the dark theme */
-    padding: 1rem 0;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center; /* Centers the paragraph text */
-}
-
-.card p {
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
-    color: #cccccc;
-}
-
-/* Lists styling for the Products page */
-ul {
-    margin-top: 2rem;
-    text-align: left; /* Keeps bullet points readable */
-    display: inline-block;
-}
-
-li {
-    margin-bottom: 1rem;
-    color: #cccccc;
-}
-
-li strong {
-    color: #ffffff;
-}
-
-/* Contact Section */
-.contact-card {
-    text-align: center;
-}
-
-.contact-card a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-bottom: 1px solid #ffffff;
-    padding-bottom: 2px;
-    transition: opacity 0.3s ease;
-}
-
-.contact-card a:hover {
-    opacity: 0.7;
-}
-
-/* Footer */
-footer {
-    background: #000000;
-    color: #444444;
-    text-align: center;
-    padding: 3rem 0;
-    font-size: 0.85rem;
-}
+</body>
+</html>
