@@ -33,8 +33,9 @@ header {
     border-bottom: 1px solid #333; /* Adds that professional line */
 }
 
+
 .nav-logo {
-    height: 60px; /* INCREASED: Makes the logo a little bit larger */
+    height: 85px; /* INCREASED from 60px */
     width: auto;
 }
 
