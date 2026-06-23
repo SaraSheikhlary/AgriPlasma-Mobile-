@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-/* Background Watermark (The "faint" logo effect) */
+/* Background Watermark */
 body::before {
     content: "";
     position: fixed;
@@ -16,36 +16,58 @@ body::before {
     transform: translate(-50%, -50%);
     width: 400px;
     height: 400px;
-    background-image: url('logo.png'); /* Ensure this matches your file name */
+    background-image: url('logo.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    opacity: 0.05; /* Faint watermark */
+    opacity: 0.05;
     z-index: -1;
 }
 
-/* Navigation Header */
+/* Header: Logo on left, Nav on right */
 header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 5%;
     background-color: #000000;
 }
 
 /* Small Logo in Top-Left */
 .nav-logo {
-    height: 40px; /* Small, clean size */
-    margin-right: 20px;
+    height: 40px; 
+    width: auto;
 }
 
+/* Container to center content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Navigation Links */
 nav a {
     color: #ffffff;
     text-decoration: none;
-    margin-right: 15px;
-    font-size: 0.9em;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     opacity: 0.8;
 }
 
 nav a:hover {
     opacity: 1;
+}
+
+/* Headings and Text for centered alignment */
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    color: #cccccc;
 }
